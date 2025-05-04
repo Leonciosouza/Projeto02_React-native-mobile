@@ -8,11 +8,8 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       {/* Usando o componente Aleatório */}
-      <Text style={{ fontSize: 26, marginBottom: 20, backgroundColor: "#00FF00", borderRadius: 6 }}>Gerador de Números Aleatórios</Text>
-      <GerNumAle min={1} max={60} />
-      <GerNumAle min={20} max={30} />
-      <GerNumAle min={100} max={2000} />
-      <GerNumAle min={0} max={100} />
+      <Text style={styles.title}>Gerador de Números Aleatórios</Text>
+      <GerNumAle />
     </SafeAreaView>
   );
 }
@@ -23,7 +20,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingHorizontal: 20,
   },
+  title: {
+    fontSize: 26,
+    marginBottom: 20,
+    backgroundColor: '#00FF00',
+    borderRadius: 6,
+    padding: 10,
+    textAlign: 'center',
+  }
+
 });
 
 
